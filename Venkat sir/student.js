@@ -1,0 +1,6 @@
+db.studentInfo.insertOne({emp:61,name:"hola",sal:30000,location:"IND"})
+db.studentInfo.insertOne({emp:61,name:"sameer",sal:50000,location:"THAILAND"})
+db.studentInfo.insertOne({emp:61,name:"hola",sal:40000,location:"IND"})
+db.studentInfo.insertOne({emp:61,name:"saleem",sal:70000,location:"THAILAND"})
+db.studentInfo.insertOne({emp:61,name:"hola",sal:30000,location:"IND"})
+db.studentInfo.insertOne({emp:61,name:"zoro",sal:20000,location:"THAILAND"})

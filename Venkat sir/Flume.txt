@@ -1,0 +1,28 @@
+flume is used to bring data from live server data to hdfs 
+
+for large data flume is not capable we can use kafka 
+
+flume can not do transformation
+
+hbase(column oriented) directly internacts with hdfs  and skipping MRV2 and yarn 
+
+
+kafka traget no sql
+flume traget is hdfs
+
+
+Flume conf file is know as Agent 
+
+Agent => source(facebook, twitter api,web server) + channel(required  ram)  +sink(hdfs) 
+
+channel is (required  ram) 
+
+
+Flume only one command 
+> flume-ng agent -c <source file path> -f <conf file path> -n flatfile_agent
+
+
+file name in flume will be the timestamp 
+
+
+for more than one source we need to create more than one conf file in flume 

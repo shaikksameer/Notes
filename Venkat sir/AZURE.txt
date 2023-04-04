@@ -1,0 +1,109 @@
+
+****************************************************************************************************************
+day 1 : (16/03/2023)    
+****************************************************************************************************************
+
+
+infrastructure service:
+    1. Compute
+            -> virtual machines
+            -> containers
+
+    2. Storage
+            -> Blob
+            -> Queues
+            -> Files
+            -> Disks
+
+    3. Network
+            -> Virtual Netowork
+            -> Load balancer
+            -> DNS
+            -> Express route
+            -> Traffic manager
+            -> VPN gateway
+            -> App Gateway 
+        
+Resourse Group 
+
+        1. IAAS 
+                -> server
+                -> storage
+                -> container
+
+        2. PAAS 
+                storage:
+                    -> Azure sql 
+                    -> Azure Nosql (cosmoDB)
+
+                analystics:
+                    -> Azure HD insight (bigdata)
+                    -> Azure Databrick  (spark platform)
+
+                ETL: 
+                    -> Azure data factory
+
+                Report: 
+                    -> Azure PowerBI
+
+                Optimatition:(storage)
+                    -> ADLS (Azure data lake storage) (faster than normal azure storage)
+                    -> Delta lake
+
+
+=======================================================================================
+
+
+
+
+****************************************************************************************************************
+day 2 : (16/03/2023)    
+****************************************************************************************************************
+
+
+hive- dw
+snowflake-dw
+azure synapse- dw
+nosql db - bigdata db
+storage - hdfs, dbfs, azure storage, datalake gen1
+acid api - sql , delta lake
+
+
+To analysis synapse data we use:
+
+    1.  sql pool
+    2.  serverles sql pool
+    3.  data explorer
+    4.  spark pool
+
+
+
+
+AZURE DATABRICKS SPARK PLATFORM
+
+        pyspark : batch process : JUPYTER BOOK
+        sparkscala: batchprocess: JUPYTERBOOK
+        sparksql : interactive: JUPYTERBOOK
+        spark streaming : kafka :streaming : JUPYTERBOOK
+         
+
+DATABRICKS: AZURE STORAGE + ADLS GEN2 + DBFS    
+
+
+nosql : big data database :distributed 
+    hbase :column oriented
+    mongodb :column oriented
+    cassandra :document oriented (json)
+    azure cosmoDB : document oriented (json)
+    aws dynamoDB : json oriented 
+
+uses of nosql : backend of web application 
+
+web application:  ui + server + db(nosql db)
+
+cosmodb datamodel: 
+
+        container
+        items (document) (we can insert millions of record)
+        sql api (on)  >>  container
+

@@ -1,0 +1,259 @@
+****************************************************************************************************************
+day 1 : (09/03/2023)    topic :  Revision 
+****************************************************************************************************************
+missing topic:
+zookeeper
+hbase **(imp) 
+pig 
+--------------------------------------
+
+
+
+Python: 
+lambda function (**)
+--------------------------------------
+
+
+
+
+hadoop and spark (big data components)
+--------------------------------------
+
+
+pyspark **
+spark sql
+streaming 
+kafka
+-------------------------------------
+
+
+
+
+optimatition:
+rdd, dataframe level, hive level
+-------------------------------------
+
+
+defining fucntion and use it into pyspark 
+-----------------------------------------
+
+
+
+AWS:
+nosql
+lambda
+glue
+data warehouse 
+databricks
+
+
+
+dataset vs dataframe vs rdd **
+
+
+spark sql ** in industry (70%) 
+
+---------------------------------------------
+spark of anaylis:(it process in memory) 
+batch process anaylis
+interactive anaylis (using query)  
+stream anaylis
+---------------------------------------------
+
+#how to analyse log files (unstructured data)
+#create dataset using pyspark
+
+
+-> dataframe faster than rdd
+
+
+---------------------------------------------------
+hadoop anaylis:(hive, pig) (it process in disk )
+batch processing 
+online analysis(HBase)(nosql) 
+--------------------------------------------------
+
+nosql=> not only sql 
+
+-------------------------------------------------
+
+
+
+hbase is independent which directly interface with hdfs 
+
+sqoop,flume, hive,pig goes via MR everytime 
+
+
+hbase ->  database
+hive -> data warehousing 
+
+
+oozie => sheduling the task
+
+airflow =>  alternative of oozie  for sheduling task  
+            no limit to the number of task 
+            can retry after any falied task automatically 
+
+default reducer is always "1"
+
+
+zookeeper=>  to manage the hadoop ecosystem 
+
+
+big data project terminmnology: END to END implementation 
+
+1. source of clinet of data:
+    static => (mysql etc)  (any rdbms)
+    dyanmic => (live applpication servers)
+
+2.Data ingestion (ETL): 
+    static:
+        sqoop 
+
+    dynamic :
+        flume 
+        kafka
+    
+    AWS:
+        glue
+        kinesis
+
+3. Analysis: 
+    hbase (online)
+    hive
+    spark sql
+    mr 
+    etc
+
+4. BI (report):
+    tableu
+    Power BI
+
+
+export only 1 table or solution at a time (sqoop)
+
+offline:
+    cloudera
+
+cloud :
+    databricks
+    aws emr
+
+speculative execution  :
+    if one task is running slowly then recourse manager relase a duplicate to over some that 
+    but if the duplicate also runs slowly then it realse one more 
+    this is called speculative execution
+
+
+task failed reason :
+    -> network problem 
+    -> system  issue 
+
+---------------------------------
+key:value 
+long writable :  text (format)
+---------------------------------
+
+
+****************************************************************************************************************
+day 2 : (10/03/2023)   
+****************************************************************************************************************
+
+
+Hive metadata is stored in RDBMS (MySQL, etc)
+
+
+Hive project 
+
+ 
+****************************************************************************************************************
+day 3 : (13/03/2023)    
+****************************************************************************************************************
+
+
+nosql:
+    1. hbase
+    2. MangoDB
+    3. cassandra
+
+
+Plug and play platoform in industry: 
+
+    AWS:
+        1. AWS emr
+        2. AWS DS
+    AZURE:
+        1. Azure hd insight 
+        2. Azure DS
+
+partition 
+    1. Dynamic
+    2. Static
+
+skip header in hive :  TBLPROPERTIES ("skip.header.line.count" ="1");
+
+hive : batch processing and data warehousing
+hbase is olap 
+
+for acid properties: 
+    TBLPROPERTIES ('transctional'='true');
+
+
+Hive to hdfs: 
+    insert overwrite directory 'sales/abc.txt' select * from product;
+
+default delimeter is ','
+
+
+
+kafka process:
+kafka ->broker  ->topic  ->partitions  ->message 
+
+
+
+
+ hive to sql:         
+            sqoop export
+            informatica 
+
+sqoop export --connect jdbc:mysql://localhost:3306/default
+--username root
+--password root
+--table xyz
+--export-dir /user/sameer/sameer.txt/000000_0
+--input-field-terminated-by '\0001' ;
+
+
+
+delimiter: 
+            ,
+            tab
+            /
+            '\0001'
+            '\0'
+
+
+-------------------------------------------------------------------------------
+
+
+
+****************************************************************************************************************
+day 4 : (14/03/2023)    
+****************************************************************************************************************
+
+spark streaming  with kafka best for live stream data 
+ 
+kafka uses dfs 
+
+
+
+
+****************************************************************************************************************
+day 5 : (16/03/2023)    
+****************************************************************************************************************
+
+pyspark: 
+
+    
+cache() -> memory only ()
+

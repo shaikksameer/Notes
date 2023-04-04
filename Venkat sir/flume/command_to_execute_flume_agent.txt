@@ -1,0 +1,1 @@
+flume-ng agent -c /home/rjaganat/flatfiles -f /home/rjaganat/flatfiles/flume-flatfile_agent.conf -n flatfile_agent

@@ -1,0 +1,110 @@
+Gaming backend uses nosql db
+
+nosql => olap 
+nosql => schema on read , schemaless
+nosql=> for unstructred data
+nosql=> faster than sql db
+
+mongodb => document oriented database
+
+
+
+sql =>  (contains relations with each other tables)
+        database -> tables -> rows
+    
+nosql => (contains no read relations with each other documents)
+        database -> collections -> documents
+
+BSON => stored as binary json 
+
+
+mongodb supports upto 100 levels of nesting in one collection
+
+
+we cannot change the object id it is immutable
+
+
+
+--to check the version 
+db.version()
+
+-- to all the command
+db.help()
+
+--to see db
+show dbs
+
+--to use the db
+use <database name>
+
+--to createbase 
+use <new database name>
+
+--to check which database is used 
+db.status
+
+--to create collection
+db.createCollection(<collection name>)
+
+--to see collection 
+show collections
+
+--to drop collection
+db.<collection name>.drop()
+
+
+--to drop the current db
+db.dropDatabase()
+
+--to add data in collections
+db.<collection name>.insertMany()
+db.<collection name>.insert()
+
+ex:db.emp.insertOne({emp:69,name:"hola",sal:30000,location:"THAILAND"})
+ex:db.emp.insertMany([{emp:69,name:"hola",sal:30000,location:"THAILAND"},{emp:6,name:"ho",sal:30,location:"BNG"}])
+
+
+--to view the data in collection
+db.<collection name>.find()
+db.<collection name>.findOne()  #to find the first record
+
+
+--to rename the collection name
+db.<old collection name >.renameCollection(<new collection name>)
+
+
+-- to get proper structured data 
+db.<container name>.find().pretty()
+
+--to update the data
+db.<container name>.updateOne({<what you want update>},{$set:{<new value you want to update}})
+db.<container name>.updateMany()
+db.<container name>.replaceOne()
+
+
+ex:db.emp.updateOne({name:"saleem"},{$set:{name:"zoro"}})
+
+
+
+-- to delte the record
+db.<container name>.deleteOne({ <what you  want to delete> })
+
+--pattern matching 
+ db.<container name>.find({<key name> : {$regex : "<value>"}}).pretty()
+
+-> starts with  - "^t"
+-> ends with  - "t$"
+-> to ignore case - $options:'i'
+
+ --capped collection 
+ db.createCollection("<collection name>" , {capped :true , size:<size value>, max: <value> })
+
+
+-- to imoprt file in mongodbs
+mongoimport --db <database name> --collection <collection name> --file <file path> --jsonArray 
+
+
+-- to export one collection from mongo to local
+mongoexport --collection=<collection name> --db=<database name> --out=<out link>
+
+
