@@ -10,3 +10,15 @@
 ## Flume architecture :
 ![picture](https://www.cloudduggu.com/flume/architecture/flume_architecture.png)
 
+* Flume can not do transformation
+
+
+* Flume conf file is know as Agent 
+    * Agent => source(facebook, twitter api,web server) + channel(required  ram)  +sink(hdfs)  
+
+## Flume only one command 
+`> flume-ng agent -c <source file path> -f <conf file path> -n flatfile_agent`
+
+ File name in flume will be the timestamp 
+
+For more than one source we need to create more than one conf file in flume 

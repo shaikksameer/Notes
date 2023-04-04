@@ -1,7 +1,7 @@
 1. HDFS (done)
 2. MRv2 Yarn (done)
 3. Sqoop (done)
-4. Flume
+4. Flume (done)
 5. MRP
 6. HIVE
 7. NoSQL DB
@@ -11,3 +11,4 @@
 11. SparkSql
 12. Spark Streaming
 13. Spark Stream with Kafka
+    
