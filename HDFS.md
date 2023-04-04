@@ -1,6 +1,6 @@
-# HDFS
+# ![picture](https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png)
 
-> Hdfs is a distributed file system that provides access to data across hadoop cluster 
+    Hdfs is a distributed file system that provides access to data across hadoop cluster 
 
 * HDFS is open course (free)
 * Can read/write terabyte of data in seconds

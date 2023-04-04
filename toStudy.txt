@@ -1,6 +1,6 @@
 1. HDFS (done)
-2. MRv2 Yarn 
-3. Sqoop
+2. MRv2 Yarn (done)
+3. Sqoop (done)
 4. Flume
 5. MRP
 6. HIVE

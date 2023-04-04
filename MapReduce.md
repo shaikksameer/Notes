@@ -1,6 +1,5 @@
-# MapReduce 
-
- > MapReduce performs the processing of large data set in a distributed and parallel manner
+# ![picture](https://bigdatapath.files.wordpress.com/2019/03/3.png)
+    MapReduce performs the processing of large data set in a distributed and parallel manner
   
 * The MapReduce is a paradigm which has two phases, the mapper phase, and the reducer phase. In the Mapper, the input is given in the form of a key-value pair. The output of the Mapper is fed to the reducer as input.
 * The reducer runs only after the Mapper is over. The reducer too takes input in key-value format, and the output of reducer is the final output.
