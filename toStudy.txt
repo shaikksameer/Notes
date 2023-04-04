@@ -1,0 +1,13 @@
+1. HDFS (done)
+2. MRv2 Yarn 
+3. Sqoop
+4. Flume
+5. MRP
+6. HIVE
+7. NoSQL DB
+8. Zookeeper
+9. Spark
+10. PySpark
+11. SparkSql
+12. Spark Streaming
+13. Spark Stream with Kafka
