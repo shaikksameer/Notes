@@ -2,13 +2,13 @@
 2. MRv2 Yarn (done)
 3. Sqoop (done)
 4. Flume (done)
-5. MRP
-6. HIVE
-7. NoSQL DB
-8. Zookeeper
-9. Spark
-10. PySpark
-11. SparkSql
-12. Spark Streaming
-13. Spark Stream with Kafka
+5. MRP (done)
+6. HIVE (done)
+7. NoSQL DB (done)
+8. Zookeeper (done)
+9. Spark()
+10. PySpark ()
+11. SparkSql ()
+12. Spark Streaming ()
+13. Spark Stream with Kafka ()
     
