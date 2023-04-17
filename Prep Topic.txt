@@ -1,0 +1,6 @@
+spark , databricks ,azure de services , adf ,python ,sql , storage services,  adf pipelines
+
+ashok : 
+
+python (pandas, numpy, sklearn etc), cloud, SQL,  
+Preferred: Hadoop, Pyspark, Apache.

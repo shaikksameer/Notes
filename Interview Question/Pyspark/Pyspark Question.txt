@@ -1,0 +1,26 @@
+1. What is pyspark architecture?
+2. What is the difference between an rdd, dataframe & dataset?
+3. How can you create a dataframe a) using existing rdd b) from a csv file 
+4  Explain the use of strutType and struct structfield classes in pyspark with example 
+5. What are the diffrent ways to handle row suplicate in a pyspark dataframe 
+6. Explain pysaprk UDF with the help of example 
+7. Discuss the map() transformation  in pyspark dataframe 
+8. what do mean by joins in pyspaker dataframe? what are the different types of joins?
+9. what is pyspark arrayType?
+10. what is pyspark partition?
+11.what is meant by pyspark MapType? how can you create a Maptype using structType?
+12.how can pyspark dataframe be converted to pandas data frame ?
+13. what is the fucntion of pyspark pivot() methos?
+14. In pyspark how do you generate broadcast variable ?
+15. When to use client and cluster modes used for deployment?
+16. How can data transfer be kept to a minimum while using Pyspark?
+17. What are sparese Vector? What distinguishes them from dense vector?
+18. What API does pyspark utilize to implement graphs?
+19. What is meant by piping in pyspark?
+20. What are the various levels of presistence that exist in pyspark?
+21. List some of the benefits of using pyspark
+22. Why do we use Pyspark sparkfiles?
+23. Does Pyspark provide a machine learning API?
+24. what are the type of pyspark shared variable and why are the they useful/
+25. What pyspark DAGsheduler?
+

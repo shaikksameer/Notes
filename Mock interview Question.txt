@@ -1,0 +1,12 @@
+1. About the project
+2. Import the csv file in pyspark and run small query on it (schema) 
+3. Import the json file in pyspark and run small query on it (schema)
+4. Diff btw dataset and dataframe (and which is faster) 
+5. what is broadcast variable and accumulator 
+6. Diff btw hive subquery and sql sub query 
+7. Example of a Hive subquery 
+8. Map Reduce Logic 
+
+
+
+

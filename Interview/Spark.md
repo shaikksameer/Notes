@@ -51,4 +51,25 @@ Spark :
 ## Partitioning 
 
     * By Default partition will be equal to number of block in hdfs 
-    
+
+## DAG 
+    * Directed Acyclic Graph
+    * Before calling any action spark keeps on making DAG 
+    * After any action is called then the dag is submitted to the dag scheduler 
+    * then it is spilted into stages
+    * then all the set of stages in given to the task scheduler 
+    * task schedular will get in contact with cluster manager 
+
+## Spark Context 
+    *  Same as ticket to a park,  spark context is a ticket to spark 
+    * It can be used to create RDDs,accumulators and broadcast variable 
+
+## Spark Architecture 
+
+![picture](https://www.interviewbit.com/blog/wp-content/uploads/2022/06/Spark-Architecture-1024x551.png)
+
+
+## spark context :
+The Spark driver program is the one that creates SparkContext object in the application. As soon as we submit the spark job, the driver program runs the main() method of your application and creates DAG's representing the data flow internally.
+
+
