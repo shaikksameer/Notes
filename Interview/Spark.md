@@ -69,7 +69,13 @@ Spark :
 ![picture](https://www.interviewbit.com/blog/wp-content/uploads/2022/06/Spark-Architecture-1024x551.png)
 
 
-## spark context :
+## Spark context :
 The Spark driver program is the one that creates SparkContext object in the application. As soon as we submit the spark job, the driver program runs the main() method of your application and creates DAG's representing the data flow internally.
 
 
+## Spark  excutor : 
+The tasks assigned by the Spark driver are performed by the Spark executors. The core responsibility of a Spark executor is to take the assigned tasks, run them, and report back their success or failure state and results. Each Spark application has its own separate executor processes.
+
+## Cluster Manager :
+-> It allocate and de allocate the resourse required by spark excutor 
+-> 
