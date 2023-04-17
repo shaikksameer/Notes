@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ![picture](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/2560px-Apache_Spark_logo.svg.png)
 
     * It is cluster computing platform designed to be fast and general purpose.
